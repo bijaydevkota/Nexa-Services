@@ -14,7 +14,7 @@ export default function page() {
   return (
     <div className="bg-orange-50">
       <nav className="flex justify-between p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
-        <div className="text-orange-500 cursor-pointer text-2xl hover:text-white">Loxcy</div>
+        <div className="text-orange-500 cursor-pointer text-2xl hover:text-white md:w-7/12">Nexa</div>
         <div className="flex gap-10 cursor-pointer">
           <p className="hover:text-orange-500">Home</p>
           <p className="hover:text-orange-500">About</p>
@@ -36,10 +36,10 @@ export default function page() {
         using Content here, content here, making it look like readable English.
       </p>
       <div className="flex md:w-10/12 items-center justify-center  mx-auto mt-8 gap-2">
-        <button className="bg-[#0b363d] text-white border border-[#0b363d] px-12 py-2 hover:bg-transparent hover:text-[#0b363d]  ">
+        <button className="bg-[#0b363d] text-white  px-12 py-2 hover:bg-orange-500 hover:text-white ">
           Try 30-days trial
         </button>
-        <button className="border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-black">
+        <button className="bg-transparent text-[#0b363d] border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-white hover:border-transparent">
           Schedule a call
         </button>
       </div>
@@ -258,7 +258,7 @@ export default function page() {
             </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline">Loxcy™</a>. All Rights Reserved.</span>
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline">NexaServices™</a>. All Rights Reserved.</span>
     </div>
 </footer>
 
