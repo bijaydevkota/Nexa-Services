@@ -114,7 +114,7 @@ export default function page() {
         <div className="mt-16">
           <p className=" flex justify-center text-orange-500">Our Pricing</p>
           <p className="text-6xl mt-4 md:w-7/12 text-center mx-auto justify-center">
-            Choose The Plan That's Right For{" "}
+            Choose The Plan That&apos;s Right For{" "}
             <span className="text-orange-500"> Your Business </span>{" "}
           </p>
         </div>
@@ -235,7 +235,7 @@ export default function page() {
 
       
 
-<footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+<footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-16">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
