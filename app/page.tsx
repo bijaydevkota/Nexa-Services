@@ -21,7 +21,7 @@ export default function page() {
           <p className="hover:text-orange-500">Contact</p>
           <p className="hover:text-orange-500">Services</p>
         </div>
-        <button className="bg-orange-600 text-white px-10 py-2 rounded-md border hover:bg-white hover:text-orange-500 hover:border border-orange-500 hover:transition-transform duration-1000 hover:-translate-y-1 hover:shadow-2xl">
+        <button className="bg-orange-500 text-white px-10 py-2 rounded-md border border-orange-500 hover:bg-transparent">
           Login
         </button>
       </nav>
@@ -36,10 +36,10 @@ export default function page() {
         using Content here, content here, making it look like readable English.
       </p>
       <div className="flex md:w-10/12 items-center justify-center  mx-auto mt-8 gap-2">
-        <button className="text-white bg-[#0b363d] border border-[#0b363d] px-12 py-2 hover:bg-transparent hover:text-[#0b363d]  hover:transition-transform duration-1000 hover:-translate-y-1 hover:shadow-2xl">
+        <button className="bg-[#0b363d] text-white border border-[#0b363d] px-12 py-2 hover:bg-transparent hover:text-[#0b363d]  ">
           Try 30-days trial
         </button>
-        <button className="border border-[#0b363d] px-12 py-2 hover:bg-[#0b363d] hover:text-white hover:transition-transform duration-1000 hover:-translate-y-1 hover:shadow-2xl">
+        <button className="border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-black">
           Schedule a call
         </button>
       </div>
