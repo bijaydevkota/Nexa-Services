@@ -9,13 +9,15 @@ import lenovoImage from "../public/lenovo.svg";
 import paypalImage from "../public/paypal.svg";
 import shopifyImage from "../public/shopify.svg";
 import spotifyImage from "../public/spotify.svg";
-import { Check, CircleCheck, Hourglass, Users, Video } from "lucide-react";
+import { Check, CircleCheck, Hourglass, Users, Video } from "lucide-react";  
 export default function page() {
   return (
     <div className="bg-orange-50">
       <nav className="flex justify-between p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
-        <div className="text-orange-500 cursor-pointer text-2xl hover:text-white md:w-7/12">Nexa</div>
-        <div className="flex gap-10 cursor-pointer">
+        <div className="cursor-pointer text-2xl items-center">
+          <p className="text-orange-500 hover:text-white">Nexa</p>
+        </div>
+        <div className="flex gap-10 cursor-pointer items-center">
           <p className="hover:text-orange-500">Home</p>
           <p className="hover:text-orange-500">About</p>
           <p className="hover:text-orange-500">Contact</p>
@@ -36,7 +38,7 @@ export default function page() {
         using Content here, content here, making it look like readable English.
       </p>
       <div className="flex md:w-10/12 items-center justify-center  mx-auto mt-8 gap-2">
-        <button className="bg-[#0b363d] text-white  px-12 py-2 hover:bg-orange-500 hover:text-white ">
+        <button className="bg-[#0b363d] text-white border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-white hover:border-transparent">
           Try 30-days trial
         </button>
         <button className="bg-transparent text-[#0b363d] border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-white hover:border-transparent">
@@ -48,14 +50,38 @@ export default function page() {
         <Image src={dashboardImage} alt="image" />
       </div>
       <div className="flex justify-between  w-7/12 mx-auto mt-16">
-        <Image className="h-20 w-20 cursor-pointer" src={amazonImage} alt="image" />
-        <Image className="h-20 w-20 cursor-pointer" src={googleImage} alt="image" />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={amazonImage}
+          alt="image"
+        />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={googleImage}
+          alt="image"
+        />
 
-        <Image className="h-20 w-20 cursor-pointer" src={lenovoImage} alt="image" />
-        <Image className="h-20 w-20 cursor-pointer" src={paypalImage} alt="image" />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={lenovoImage}
+          alt="image"
+        />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={paypalImage}
+          alt="image"
+        />
 
-        <Image className="h-20 w-20 cursor-pointer" src={shopifyImage} alt="image" />
-        <Image className="h-20 w-20 cursor-pointer" src={spotifyImage} alt="image" />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={shopifyImage}
+          alt="image"
+        />
+        <Image
+          className="h-20 w-20 cursor-pointer"
+          src={spotifyImage}
+          alt="image"
+        />
       </div>
 
       <div className="bg-[#0b363d] mt-16">
@@ -110,7 +136,7 @@ export default function page() {
         </div>
       </div>
 
-      <div>
+      <div id="services">
         <div className="mt-16">
           <p className=" flex justify-center text-orange-500">Our Pricing</p>
           <p className="text-6xl mt-4 md:w-7/12 text-center mx-auto justify-center">
@@ -233,36 +259,50 @@ export default function page() {
         </div>
       </div>
 
-      
-
-<footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-16">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Loxcy</span>
+      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-16">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="https://flowbite.com/"
+              className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                Nexa
+              </span>
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline">Contact</a>
-                </li>
+              <li>
+                <a href="#" className="hover:underline me-4 md:me-6">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline me-4 md:me-6">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline me-4 md:me-6">
+                  Licensing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Contact
+                </a>
+              </li>
             </ul>
+          </div>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2023{" "}
+            <a href="#" className="hover:underline">
+              NexaServices™
+            </a>
+            . All Rights Reserved.
+          </span>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline">NexaServices™</a>. All Rights Reserved.</span>
-    </div>
-</footer>
-
-
+      </footer>
     </div>
   );
 }
