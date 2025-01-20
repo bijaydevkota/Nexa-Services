@@ -9,134 +9,93 @@ import lenovoImage from "../public/lenovo.svg";
 import paypalImage from "../public/paypal.svg";
 import shopifyImage from "../public/shopify.svg";
 import spotifyImage from "../public/spotify.svg";
-import { Check, CircleCheck, Hourglass, Users, Video } from "lucide-react";  
+import { Check, CircleCheck, Hourglass, Users, Video } from "lucide-react";
+
 export default function page() {
   return (
     <div className="bg-orange-50">
-      <nav className="flex justify-between p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
-        <div className="cursor-pointer text-2xl items-center">
+      <nav className="flex justify-between items-center p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
+        <div className="cursor-pointer text-2xl">
           <p className="text-orange-500 hover:text-white">Nexa</p>
         </div>
-        <div className="flex gap-10 cursor-pointer items-center">
+        <div className="hidden md:flex gap-6 items-center">
           <p className="hover:text-orange-500">Home</p>
           <p className="hover:text-orange-500">About</p>
           <p className="hover:text-orange-500">Contact</p>
           <p className="hover:text-orange-500">Services</p>
         </div>
-        <button className="bg-orange-500 text-white px-10 py-2 rounded-md border border-orange-500 hover:bg-transparent">
+        <button className="bg-orange-500 text-white px-6 py-2 rounded-md border border-orange-500 hover:bg-transparent">
           Login
         </button>
       </nav>
 
-      <p className="text-6xl mt-32 md:w-7/12  mx-auto text-center">
-        Make Your Business Flourish with{" "}
-        <span className="text-orange-500">Digital Marketing</span>
-      </p>
-      <p className="md:w-7/12 mx-auto text-center mt-8">
-        Save time on creating a website from scratch. Use a rich collection of
-        ready-made websites to get your project off to a fast start opposed to
-        using Content here, content here, making it look like readable English.
-      </p>
-      <div className="flex md:w-10/12 items-center justify-center  mx-auto mt-8 gap-2">
-        <button className="bg-[#0b363d] text-white border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-white hover:border-transparent">
-          Try 30-days trial
-        </button>
-        <button className="bg-transparent text-[#0b363d] border border-[#0b363d] px-12 py-2 hover:bg-orange-500 hover:text-white hover:border-transparent">
-          Schedule a call
-        </button>
+      <section className="text-center mt-32 px-4">
+        <p className="text-4xl md:text-6xl md:w-8/12 mx-auto font-bold leading-tight">
+          Make Your Business Flourish with{" "}
+          <span className="text-orange-500">Digital Marketing</span>
+        </p>
+        <p className="mt-6 text-gray-700 md:w-8/12 mx-auto">
+          Save time on creating a website from scratch. Use a rich collection of
+          ready-made websites to get your project off to a fast start opposed to
+          using Content here, content here, making it look like readable English.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <button className="bg-[#0b363d] text-white px-8 py-2 rounded hover:bg-orange-500 hover:border-transparent">
+            Try 30-days trial
+          </button>
+          <button className="border border-[#0b363d] text-[#0b363d] px-8 py-2 rounded hover:bg-orange-500 hover:text-white">
+            Schedule a call
+          </button>
+        </div>
+      </section>
+
+      <div className="w-full md:w-10/12 mx-auto mt-20">
+        <Image src={dashboardImage} alt="image" className="w-full h-auto" />
       </div>
 
-      <div className="w-7/12 mx-auto mt-16">
-        <Image src={dashboardImage} alt="image" />
-      </div>
-      <div className="flex justify-between  w-7/12 mx-auto mt-16">
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={amazonImage}
-          alt="image"
-        />
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={googleImage}
-          alt="image"
-        />
-
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={lenovoImage}
-          alt="image"
-        />
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={paypalImage}
-          alt="image"
-        />
-
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={shopifyImage}
-          alt="image"
-        />
-        <Image
-          className="h-20 w-20 cursor-pointer"
-          src={spotifyImage}
-          alt="image"
-        />
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center w-10/12 mx-auto mt-16">
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={amazonImage} alt="image" />
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={googleImage} alt="image" />
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={lenovoImage} alt="image" />
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={paypalImage} alt="image" />
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={shopifyImage} alt="image" />
+        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={spotifyImage} alt="image" />
       </div>
 
-      <div className="bg-[#0b363d] mt-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12  items-center justify-between mx-auto py-16 text-white">
-          <div className=" flex flex-col items-center justify-center">
-            <div className="bg-slate-500 flex items-center justify-center py-4 rounded-lg h-28 w-28 ">
-              <Users size={44} />
+      <div className="bg-[#0b363d] mt-16 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-center mx-auto text-white px-4">
+          <div className="text-center">
+            <div className="bg-slate-500 p-6 flex items-center justify-center mx-auto h-20 w-20">
+              <Users size={36} />
             </div>
-            <div className="mt-12">
-              <p className="text-4xl text-center">100,000+</p>
-              <p className="text-slate-500 text-center text-2xl mt-2 ">
-                No. of People Join
-              </p>
-            </div>
+            <p className="text-2xl md:text-3xl mt-6">100,000+</p>
+            <p className="text-slate-400 text-sm md:text-lg">No. of People Join</p>
           </div>
-
-          <div className=" flex flex-col items-center justify-center">
-            <div className="bg-slate-500 flex items-center justify-center py-4 rounded-lg h-28 w-28">
-              <Check size={44} />
+          <div className="text-center">
+            <div className="bg-slate-500 p-6  flex items-center justify-center mx-auto h-20 w-20">
+              <Check size={36} />
             </div>
-            <div className="mt-12">
-              <p className="text-4xl text-center">120+</p>
-              <p className="text-slate-500 text-center text-2xl mt-2 ">
-                Countries Reached
-              </p>
-            </div>
+            <p className="text-2xl md:text-3xl mt-6">120+</p>
+            <p className="text-slate-400 text-sm md:text-lg">Countries Reached</p>
           </div>
-
-          <div className=" flex flex-col items-center justify-center">
-            <div className="bg-slate-500 flex items-center justify-center py-4 rounded-lg h-28 w-28">
-              <Hourglass size={44} />
+          <div className="text-center">
+            <div className="bg-slate-500 p-6  flex items-center justify-center mx-auto h-20 w-20">
+              <Hourglass size={36} />
             </div>
-            <div className="mt-12">
-              <p className="text-4xl text-center">425,000+</p>
-              <p className="text-slate-500 text-center text-2xl mt-2 ">
-                No. of Session Given
-              </p>
-            </div>
+            <p className="text-2xl md:text-3xl mt-6">425,000+</p>
+            <p className="text-slate-400 text-sm md:text-lg">No. of Session Given</p>
           </div>
-
-          <div className=" flex flex-col items-center justify-center">
-            <div className="bg-slate-500 flex items-center justify-center py-4 rounded-lg h-28 w-28">
-              <Video size={44} />
+          <div className="text-center">
+            <div className="bg-slate-500 p-6 flex items-center justify-center mx-auto h-20 w-20">
+              <Video size={36} />
             </div>
-            <div className="mt-12">
-              <p className="text-4xl text-center">500K</p>
-              <p className="text-slate-500 text-center text-2xl mt-2 ">
-                Hours of Work
-              </p>
-            </div>
+            <p className="text-2xl md:text-3xl mt-6">500K</p>
+            <p className="text-slate-400 text-sm md:text-lg">Hours of Work</p>
           </div>
         </div>
       </div>
 
-      <div id="services">
+     <div id="services">
         <div className="mt-16">
           <p className=" flex justify-center text-orange-500">Our Pricing</p>
           <p className="text-6xl mt-4 md:w-7/12 text-center mx-auto justify-center">
