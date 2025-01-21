@@ -16,13 +16,23 @@ export default function page() {
     <div className="bg-orange-50">
       <nav className="flex justify-between items-center p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
         <div className="cursor-pointer text-2xl">
-          <a href="#" className="text-orange-500 hover:text-white">Nexa</a>
+          <a href="#" className="text-orange-500 hover:text-white">
+            Nexa
+          </a>
         </div>
         <div className="hidden md:flex gap-6 items-center">
-          <a href="#" className="hover:text-orange-500">Home</a>
-          <a href="#about" className="hover:text-orange-500">About</a>         
-          <a href="#services" className="hover:text-orange-500">Services</a>
-          <a href="#contact" className="hover:text-orange-500">Contact</a>
+          <a href="#" className="hover:text-orange-500">
+            Home
+          </a>
+          <a href="#about" className="hover:text-orange-500">
+            About
+          </a>
+          <a href="#services" className="hover:text-orange-500">
+            Services
+          </a>
+          <a href="#contact" className="hover:text-orange-500">
+            Contact
+          </a>
         </div>
         <button className="bg-orange-500 text-white px-6 py-2 rounded-md border border-orange-500 hover:bg-transparent">
           Login
@@ -37,7 +47,8 @@ export default function page() {
         <p className="mt-6 text-gray-700 md:w-8/12 mx-auto">
           Save time on creating a website from scratch. Use a rich collection of
           ready-made websites to get your project off to a fast start opposed to
-          using Content here, content here, making it look like readable English.
+          using Content here, content here, making it look like readable
+          English.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <button className="bg-[#0b363d] text-white px-8 py-2 rounded hover:bg-orange-500 hover:border-transparent">
@@ -53,37 +64,70 @@ export default function page() {
         <Image src={dashboardImage} alt="image" className="w-full h-auto" />
       </div>
 
-      <div id="about" className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center w-10/12 mx-auto mt-16">
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={amazonImage} alt="image" />
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={googleImage} alt="image" />
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={lenovoImage} alt="image" />
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={paypalImage} alt="image" />
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={shopifyImage} alt="image" />
-        <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={spotifyImage} alt="image" />
+      <div
+        id="about"
+        className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center w-10/12 mx-auto mt-16"
+      >
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={amazonImage}
+          alt="image"
+        />
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={googleImage}
+          alt="image"
+        />
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={lenovoImage}
+          alt="image"
+        />
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={paypalImage}
+          alt="image"
+        />
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={shopifyImage}
+          alt="image"
+        />
+        <Image
+          className="h-16 w-16 md:h-20 md:w-20 cursor-pointer"
+          src={spotifyImage}
+          alt="image"
+        />
       </div>
 
-      <div  className="bg-[#0b363d] mt-16 py-12">
+      <div className="bg-[#0b363d] mt-16 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-center mx-auto text-white px-4">
           <div className="text-center">
             <div className="bg-slate-500 p-6 flex items-center justify-center mx-auto h-20 w-20">
               <Users size={36} />
             </div>
             <p className="text-2xl md:text-3xl mt-6">100,000+</p>
-            <p className="text-slate-400 text-sm md:text-lg">No. of People Join</p>
+            <p className="text-slate-400 text-sm md:text-lg">
+              No. of People Join
+            </p>
           </div>
           <div className="text-center">
             <div className="bg-slate-500 p-6  flex items-center justify-center mx-auto h-20 w-20">
               <Check size={36} />
             </div>
             <p className="text-2xl md:text-3xl mt-6">120+</p>
-            <p className="text-slate-400 text-sm md:text-lg">Countries Reached</p>
+            <p className="text-slate-400 text-sm md:text-lg">
+              Countries Reached
+            </p>
           </div>
           <div className="text-center">
             <div className="bg-slate-500 p-6  flex items-center justify-center mx-auto h-20 w-20">
               <Hourglass size={36} />
             </div>
             <p className="text-2xl md:text-3xl mt-6">425,000+</p>
-            <p className="text-slate-400 text-sm md:text-lg">No. of Session Given</p>
+            <p className="text-slate-400 text-sm md:text-lg">
+              No. of Session Given
+            </p>
           </div>
           <div className="text-center">
             <div className="bg-slate-500 p-6 flex items-center justify-center mx-auto h-20 w-20">
@@ -95,7 +139,7 @@ export default function page() {
         </div>
       </div>
 
-     <div id="services">
+      <div id="services">
         <div className="mt-16">
           <p className=" flex justify-center text-orange-500">Our Pricing</p>
           <p className="text-6xl mt-4 md:w-7/12 text-center mx-auto justify-center">
@@ -218,64 +262,70 @@ export default function page() {
         </div>
       </div>
 
-      <div id="contact" className="min-h-screen flex items-center justify-center py-12 px-6">
-    <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h1>
-      <p className="text-gray-600 mb-6">
-        We'd love to hear from you. Please fill out the form below.
-      </p>
-      <form className="space-y-4" action="https://example.com/form-handler" method="POST">
-        
-        <div>
-          <label  className="block text-sm font-medium text-gray-700">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-          />
+      <div
+        id="contact"
+        className="min-h-screen flex items-center justify-center py-12 px-6"
+      >
+        <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
+          <h1 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h1>
+          <p className="text-gray-600 mb-6">
+            We&apos;d love to hear from you. Please fill out the form below.
+          </p>
+          <form
+            className="space-y-4"
+            action="https://example.com/form-handler"
+            method="POST"
+          >
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-[#0b363d] text-white py-2 px-4 rounded-md hover:bg-[#135a65] focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-          />
-        </div>
-        
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"           
-            required
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-          ></textarea>
-        </div>
-      
-        <button
-          type="submit"
-          className="w-full bg-[#0b363d] text-white py-2 px-4 rounded-md hover:bg-[#135a65] focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
-  </div>
+      </div>
 
       <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-8">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
