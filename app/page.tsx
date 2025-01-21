@@ -16,13 +16,13 @@ export default function page() {
     <div className="bg-orange-50">
       <nav className="flex justify-between items-center p-5 sticky top-0 z-50 bg-[#0b363d] text-white">
         <div className="cursor-pointer text-2xl">
-          <p className="text-orange-500 hover:text-white">Nexa</p>
+          <a href="#" className="text-orange-500 hover:text-white">Nexa</a>
         </div>
         <div className="hidden md:flex gap-6 items-center">
-          <p className="hover:text-orange-500">Home</p>
-          <p className="hover:text-orange-500">About</p>
-          <p className="hover:text-orange-500">Contact</p>
-          <p className="hover:text-orange-500">Services</p>
+          <a href="#" className="hover:text-orange-500">Home</a>
+          <a href="#about" className="hover:text-orange-500">About</a>         
+          <a href="#services" className="hover:text-orange-500">Services</a>
+          <a href="#contact" className="hover:text-orange-500">Contact</a>
         </div>
         <button className="bg-orange-500 text-white px-6 py-2 rounded-md border border-orange-500 hover:bg-transparent">
           Login
@@ -43,7 +43,7 @@ export default function page() {
           <button className="bg-[#0b363d] text-white px-8 py-2 rounded hover:bg-orange-500 hover:border-transparent">
             Try 30-days trial
           </button>
-          <button className="border border-[#0b363d] text-[#0b363d] px-8 py-2 rounded hover:bg-orange-500 hover:text-white">
+          <button className="border border-[#0b363d] text-[#0b363d] px-8 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500">
             Schedule a call
           </button>
         </div>
@@ -53,7 +53,7 @@ export default function page() {
         <Image src={dashboardImage} alt="image" className="w-full h-auto" />
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center w-10/12 mx-auto mt-16">
+      <div id="about" className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center w-10/12 mx-auto mt-16">
         <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={amazonImage} alt="image" />
         <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={googleImage} alt="image" />
         <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={lenovoImage} alt="image" />
@@ -62,7 +62,7 @@ export default function page() {
         <Image className="h-16 w-16 md:h-20 md:w-20 cursor-pointer" src={spotifyImage} alt="image" />
       </div>
 
-      <div className="bg-[#0b363d] mt-16 py-12">
+      <div  className="bg-[#0b363d] mt-16 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-center mx-auto text-white px-4">
           <div className="text-center">
             <div className="bg-slate-500 p-6 flex items-center justify-center mx-auto h-20 w-20">
@@ -218,7 +218,66 @@ export default function page() {
         </div>
       </div>
 
-      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-16">
+      <div id="contact" className="min-h-screen flex items-center justify-center py-12 px-6">
+    <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h1>
+      <p className="text-gray-600 mb-6">
+        We'd love to hear from you. Please fill out the form below.
+      </p>
+      <form className="space-y-4" action="https://example.com/form-handler" method="POST">
+        
+        <div>
+          <label  className="block text-sm font-medium text-gray-700">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"           
+            required
+            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          ></textarea>
+        </div>
+      
+        <button
+          type="submit"
+          className="w-full bg-[#0b363d] text-white py-2 px-4 rounded-md hover:bg-[#135a65] focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-8">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a
