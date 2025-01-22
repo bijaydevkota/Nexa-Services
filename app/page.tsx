@@ -40,7 +40,7 @@ export default function page() {
       </nav>
 
       <section className="text-center mt-32 px-4">
-        <p className="text-4xl md:text-6xl md:w-8/12 mx-auto font-bold leading-tight">
+        <p className="text-4xl md:text-6xl md:w-8/12 mx-auto text-[#0b363d] font-bold leading-tight">
           Make Your Business Flourish with{" "}
           <span className="text-orange-500">Digital Marketing</span>
         </p>
@@ -142,7 +142,7 @@ export default function page() {
       <div id="services">
         <div className="mt-16">
           <p className=" flex justify-center text-orange-500">Our Pricing</p>
-          <p className="text-6xl mt-4 md:w-7/12 text-center mx-auto justify-center">
+          <p className="text-6xl mt-4 md:w-7/12 text-center text-[#0b363d] mx-auto justify-center">
             Choose The Plan That&apos;s Right For{" "}
             <span className="text-orange-500"> Your Business </span>{" "}
           </p>
@@ -157,7 +157,7 @@ export default function page() {
               </p>
             </div>
             <div className="mt-12 text-start px-12">
-              <p className="text-4xl mt-6">
+              <p className="text-4xl mt-6 text-[#0b363d]">
                 $ 0 / <span className="text-lg text-gray-600"> month</span>
               </p>
               <p className="mt-4 text-lg">Includes :</p>
@@ -194,7 +194,7 @@ export default function page() {
               </p>
             </div>
             <div className="mt-12 text-start px-12">
-              <p className="text-4xl mt-6">
+              <p className="text-4xl mt-6 text-[#0b363d]">
                 $ 90 / <span className="text-lg text-gray-600"> month</span>
               </p>
               <p className="mt-4 text-lg">Includes :</p>
@@ -231,7 +231,7 @@ export default function page() {
               </p>
             </div>
             <div className="mt-12 text-start px-12">
-              <p className="text-4xl mt-6">
+              <p className="text-4xl mt-6 text-[#0b363d]">
                 $ 190 / <span className="text-lg text-gray-600"> month</span>
               </p>
               <p className="mt-4 text-lg">Includes :</p>
@@ -327,14 +327,14 @@ export default function page() {
         </div>
       </div>
 
-      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-8">
+      <footer className="bg-white rounded-lg shadow dark:bg-[#0b363d] m-8">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a
               href="https://flowbite.com/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-[#0b363d]">
                 Nexa
               </span>
             </a>
