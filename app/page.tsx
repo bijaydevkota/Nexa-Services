@@ -151,7 +151,7 @@ export default function page() {
         <div className="gap-4 justify-center w-9/12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto">
           <div className="mt-16 pt-1 bg-white  rounded">
             <div className="bg-orange-50 m-4 p-4  rounded">
-              <p className="text-2xl">Free</p>
+              <p className="text-2xl text-[#0b363d]">Free</p>
               <p className="mt-6 text-gray-600">
                 Explore the products and power small personal projects.
               </p>
@@ -188,7 +188,7 @@ export default function page() {
 
           <div className="mt-16 pt-1 bg-white  rounded shadow-2xl">
             <div className="bg-[#0b363d] text-white m-4 p-4  rounded">
-              <p className="text-2xl">Pro</p>
+              <p className="text-2xl text-[#0b363d]">Pro</p>
               <p className="mt-6 text-white">
                 Explore the products and power small personal projects.
               </p>
@@ -225,7 +225,7 @@ export default function page() {
 
           <div className="mt-16 pt-1 bg-white  rounded">
             <div className="bg-orange-50 m-4 p-4  rounded">
-              <p className="text-2xl">Enterprise</p>
+              <p className="text-2xl text-[#0b363d]">Enterprise</p>
               <p className="mt-6 text-gray-600">
                 Explore the products and power small personal projects.
               </p>
